@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main(){
+
+    int n;
+    int low=1,high=n;
+    int mid=low + high/2;
+    int square= mid*mid;
+    
+   
+    
+    while(low<=high){
+        if(square<=n){
+            low=mid+1;
+        }
+        else{
+            high=mid-1;
+        }
+        return high;
+    }
+}
